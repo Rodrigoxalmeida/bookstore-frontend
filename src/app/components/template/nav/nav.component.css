@@ -1,0 +1,12 @@
+.container{
+    height: 85%;
+    background-color: rgb(79, 78, 78);
+}
+
+i{
+    padding-left: 1.6rem;
+}
+
+mat-sidenav{
+    background-color: rgb(141, 138, 138);
+}
