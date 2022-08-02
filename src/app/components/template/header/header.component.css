@@ -9,9 +9,10 @@ img {
 }
 
 span {
-    display: flex;
+    display:flex;
     align-items: center;
 }
+
 
 h1 {
     padding-left: 1.2rem;

@@ -1,0 +1,11 @@
+.footer{
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(57, 52, 52);
+    justify-content: flex-end;
+}
+
+h2 {
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+}
