@@ -1,7 +1,7 @@
 .header {
     justify-content: center;
     height: 10%;
-    background-color: rgb(179, 175, 175);
+    background-color:rgb(32, 32, 32);
 }
 
 img {    
@@ -16,5 +16,5 @@ span {
 h1 {
     padding-left: 1.2rem;
     font-size: 1.5rem;
-    color: black;
+    color: white;
 }
