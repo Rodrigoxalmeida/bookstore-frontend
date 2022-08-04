@@ -16,7 +16,8 @@ import {MatIconModule} from '@angular/material/icon';
 import { HomeComponent } from './components/views/home/home.component'; 
 import {MatCardModule} from '@angular/material/card';
 import { CategoriaReadComponent } from './components/views/categoria/categoria-read/categoria-read.component';
-import {MatTableModule} from '@angular/material/table'; 
+import {MatTableModule} from '@angular/material/table';
+import { ContatosComponent } from './components/template/contatos/contatos.component'; 
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {MatTableModule} from '@angular/material/table';
     FooterComponent,
     NavComponent,
     HomeComponent,
-    CategoriaReadComponent
+    CategoriaReadComponent,
+    ContatosComponent
   ],
   imports: [
     BrowserModule,
