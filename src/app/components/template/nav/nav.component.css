@@ -5,6 +5,7 @@
 
 i {
     padding-right: .7rem;
+    color: rgb(173, 56, 56);;
 }
 
 .side {
@@ -20,7 +21,7 @@ mat-nav-list {
 }
 
 .home, .categorias, .contatos {
-    color: white;
+    color:white;
 }
 
 .nav {

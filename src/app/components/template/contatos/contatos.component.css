@@ -20,6 +20,12 @@
     height: 60px;
 }
 
+.title h1 {
+    font-size: 2rem;
+    color:white;
+    font-weight: 500;
+}
+
 img {
     width: 10rem;
 }
