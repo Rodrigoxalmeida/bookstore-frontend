@@ -11,7 +11,7 @@
 
 .home-contato-git {
     width: 130px;
-    height: 30px;
+    height: 60px;
 }
 
 .home-contato-linkedin {
@@ -21,6 +21,7 @@
 }
 
 img {
+    padding-top: 1rem;
     padding-left: 0.2rem;
     padding: auto;
     width: 10rem;
