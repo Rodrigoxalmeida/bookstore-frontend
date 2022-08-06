@@ -7,21 +7,22 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/template/header/header.component';
 
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
-import {MatSidenavModule} from '@angular/material/sidenav'; 
-import {MatListModule} from '@angular/material/list'; 
-import {MatButtonModule} from '@angular/material/button'; 
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input'; 
 
-import {MatIconModule} from '@angular/material/icon';
-import { HomeComponent } from './components/views/home/home.component'; 
-import {MatCardModule} from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { HomeComponent } from './components/views/home/home.component';
+import { MatCardModule } from '@angular/material/card';
 import { CategoriaReadComponent } from './components/views/categoria/categoria-read/categoria-read.component';
-import {MatTableModule} from '@angular/material/table';
+import { MatTableModule } from '@angular/material/table';
 import { ContatosComponent } from './components/template/contatos/contatos.component';
-import { CategoriaCreateComponent } from './components/views/categoria/categoria-create/categoria-create.component'; 
-
+import { CategoriaCreateComponent } from './components/views/categoria/categoria-create/categoria-create.component';
+import { FormsModule } from "@angular/forms";
 
 
 @NgModule({
@@ -46,7 +47,9 @@ import { CategoriaCreateComponent } from './components/views/categoria/categoria
     MatCardModule,
     MatTableModule,
     HttpClientModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule,
+    MatInputModule
 
   ],
   providers: [],
