@@ -12,6 +12,7 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import {MatSidenavModule} from '@angular/material/sidenav'; 
 import {MatListModule} from '@angular/material/list'; 
+import {MatButtonModule} from '@angular/material/button'; 
 
 import {MatIconModule} from '@angular/material/icon';
 import { HomeComponent } from './components/views/home/home.component'; 
@@ -42,7 +43,8 @@ import { ContatosComponent } from './components/template/contatos/contatos.compo
     MatIconModule,
     MatCardModule,
     MatTableModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule
 
   ],
   providers: [],
