@@ -6,9 +6,10 @@
     height: 5%;
 }
 
-h2 {
+h3 {
     font-size: 1rem;
     color: white;
+    opacity: .4;
 }
 
 a{

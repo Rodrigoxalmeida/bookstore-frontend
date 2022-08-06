@@ -3,25 +3,32 @@
     background-color: rgb(79, 78, 78);
 }
 
-i {
-    padding-right: .7rem;
-    color: rgb(173, 56, 56);;
-}
-
 .side {
     width: 12%;
 }
 
-mat-sidenav {
-    background-color: rgb(141, 138, 138);
+.sidenav {
+    width: 12rem;
+    background-color: rgb(92, 91, 91);
 }
 
-mat-nav-list {
-    justify-content: center;
+img {
+    width: 100%;
+    height: 9rem;
+    margin: 2rem auto 1rem auto;
 }
 
-.home, .categorias, .contatos {
-    color:white;
+.sidenav a {
+    color: white;
+}
+
+.sidenav a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.sidenav i {
+    padding-right: .7rem;
+    color: rgb(97, 1, 1);
 }
 
 .nav {
