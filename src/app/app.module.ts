@@ -19,7 +19,8 @@ import { HomeComponent } from './components/views/home/home.component';
 import {MatCardModule} from '@angular/material/card';
 import { CategoriaReadComponent } from './components/views/categoria/categoria-read/categoria-read.component';
 import {MatTableModule} from '@angular/material/table';
-import { ContatosComponent } from './components/template/contatos/contatos.component'; 
+import { ContatosComponent } from './components/template/contatos/contatos.component';
+import { CategoriaCreateComponent } from './components/views/categoria/categoria-create/categoria-create.component'; 
 
 
 
@@ -31,7 +32,8 @@ import { ContatosComponent } from './components/template/contatos/contatos.compo
     NavComponent,
     HomeComponent,
     CategoriaReadComponent,
-    ContatosComponent
+    ContatosComponent,
+    CategoriaCreateComponent
   ],
   imports: [
     BrowserModule,
