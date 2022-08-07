@@ -23,6 +23,7 @@ h1{
 }
 
 .form textarea{
+    max-height: 0.8rem;
     color: white;
     resize: none;
     
