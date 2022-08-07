@@ -24,6 +24,7 @@ import { MatTableModule } from '@angular/material/table';
 import { ContatosComponent } from './components/template/contatos/contatos.component';
 import { CategoriaCreateComponent } from './components/views/categoria/categoria-create/categoria-create.component';
 import { FormsModule } from "@angular/forms";
+import { CategoriaDeleteComponent } from './components/views/categoria/categoria-delete/categoria-delete.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { FormsModule } from "@angular/forms";
     HomeComponent,
     CategoriaReadComponent,
     ContatosComponent,
-    CategoriaCreateComponent
+    CategoriaCreateComponent,
+    CategoriaDeleteComponent
   ],
   imports: [
     BrowserModule,
