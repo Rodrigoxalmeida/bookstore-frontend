@@ -14,6 +14,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input'; 
+import {MatSnackBarModule} from '@angular/material/snack-bar'; 
 
 import { MatIconModule } from '@angular/material/icon';
 import { HomeComponent } from './components/views/home/home.component';
@@ -49,7 +50,8 @@ import { FormsModule } from "@angular/forms";
     HttpClientModule,
     MatButtonModule,
     FormsModule,
-    MatInputModule
+    MatInputModule,
+    MatSnackBarModule
 
   ],
   providers: [],

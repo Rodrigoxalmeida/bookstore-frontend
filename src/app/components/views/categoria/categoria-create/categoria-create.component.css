@@ -23,10 +23,16 @@ h1{
 }
 
 .form textarea{
+    color: white;
     resize: none;
+    
 }
 
 .form textarea::placeholder{
+    color: white;
+}
+
+input {
     color: white;
 }
 

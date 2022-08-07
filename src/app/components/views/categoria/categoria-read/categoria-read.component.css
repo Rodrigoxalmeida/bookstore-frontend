@@ -25,6 +25,7 @@ button {
 .table {
     width: 100%;
     background-color: rgb(83, 83, 83);
+    margin-bottom: 2rem;
 }
 
 th {
