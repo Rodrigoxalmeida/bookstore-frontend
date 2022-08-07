@@ -1,0 +1,62 @@
+
+form{
+    text-align: center;
+    width: 70%;
+    margin: 2rem auto 0 auto;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.form{
+    width: 100%;
+}
+.labelNome{
+    color: rgb(12, 255, 4);
+}
+.labelDescricao {
+    color: rgb(12, 255, 4);
+}
+
+.form textarea{
+    max-height: 0.8rem;
+    color: white;
+    resize: none;
+}
+
+input::placeholder{
+    color:white;
+}
+
+.form textarea::placeholder{
+    color: white;
+}
+
+.form input {
+    color: white;
+}
+
+.buttons {
+    width: 100%;
+    text-align: start;
+}
+
+button {
+    margin-right: .5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.excluir {
+    color: white;
+    background-color: rgb(61, 187, 61);
+}
+.cancelar {
+    color: white;
+    background-color: rgb(235, 43, 43);
+}
+
