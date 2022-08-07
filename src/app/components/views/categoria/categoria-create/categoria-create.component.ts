@@ -23,7 +23,7 @@ export class CategoriaCreateComponent implements OnInit {
   create(): void{
     this.service.create(this.categoria).subscribe((resposta) => {
       this.router.navigate(['categorias']);
-      this.service.mensagemSucesso('Categoria criada com sucesso! ');
+      this.service.mensagemSucesso('Estante criada com sucesso! ');
     },err => {
       for(let i =0; i < err.error.errors.length; i++){
         this.service.mensagemErro(err.error.errors[i].message);
