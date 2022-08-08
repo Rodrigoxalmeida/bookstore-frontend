@@ -17,9 +17,14 @@ mat-paginator{
     color: white;
 }
 
+.filter {
+    color: white;
+}
+
 .filter::placeholder{
     color: white;
 }
+
 
 .title {
     text-align: center;
