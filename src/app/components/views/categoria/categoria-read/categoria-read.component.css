@@ -3,6 +3,24 @@
     margin: 1.4rem auto auto auto;
 }
 
+mat-form-field{
+    width: 100%;
+}
+
+mat-paginator{
+    color: white;
+    background-color: rgb(83, 83, 83);
+    margin-bottom: 2rem;
+}
+
+.labelFilter{
+    color: white;
+}
+
+.filter::placeholder{
+    color: white;
+}
+
 .title {
     text-align: center;
     margin-bottom: 3rem;
