@@ -28,7 +28,7 @@ export class CategoriaReadComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     this.findAll();
   }
-
+  
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
   ngAfterViewInit(): void {
