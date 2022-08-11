@@ -47,6 +47,7 @@ input::placeholder{
 }
 
 button {
+    margin-top: 0.5rem;
     margin-right: .5rem;
     padding-right: 2rem;
     padding-left: 2rem;

@@ -38,6 +38,7 @@ mat-paginator{
 }
 
 button {
+    margin-top: 0.5rem;
     margin-bottom: .9rem ;
 }
 
