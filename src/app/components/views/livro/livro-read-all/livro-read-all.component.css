@@ -42,7 +42,7 @@ button {
     margin-bottom: .9rem ;
 }
 
-.addcat {
+.addcat, .voltar {
     color: rgb(56, 219, 105);
 }
 

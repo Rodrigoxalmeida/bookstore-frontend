@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-livro-create',
@@ -12,9 +13,17 @@ export class LivroCreateComponent implements OnInit {
   autor = new FormControl('', [Validators.minLength(3)]);
   descricao = new FormControl('', [Validators.minLength(10)]);
 
-  constructor() { }
+  id_cat: String = '';
+
+  constructor(
+
+    private route: ActivatedRoute,
+    private router: Router
+
+  ) { }
 
   ngOnInit(): void {
+    this.id_cat = this.route.snapshot.paramMap.get('id_cat')!;
   }
 
   getMessage(){
@@ -28,6 +37,10 @@ export class LivroCreateComponent implements OnInit {
       return 'O Campo Descrição deve conter entre 10 e 2.000.000 caracteres';
     }
     return false;
+  }
+
+  cancel(): void {
+    this.router.navigate([`categorias/${this.id_cat}/livros`]);
   }
 
 }
