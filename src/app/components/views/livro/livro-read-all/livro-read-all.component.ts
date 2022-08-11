@@ -3,7 +3,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { ActivatedRoute, Router } from '@angular/router';
 import { LivroService } from '../service/livro.service';
-import { Livro } from './model/livro.model';
+import { Livro } from '../model/livro.model';
 
 @Component({
   selector: 'app-livro-read-all',

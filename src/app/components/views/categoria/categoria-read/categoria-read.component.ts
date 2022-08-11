@@ -2,8 +2,8 @@ import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
-import { Categoria } from '../models/categoria.model';
-import { CategoriaService } from '../services/categoria.service';
+import { Categoria } from '../model/categoria.model';
+import { CategoriaService } from '../service/categoria.service';
 
 @Component({
   selector: 'app-categoria-read',
