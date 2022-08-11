@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { LivroService } from '../service/livro.service';
 import { Livro } from './model/livro.model';
 
@@ -23,7 +23,8 @@ export class LivroReadAllComponent implements OnInit {
   constructor(
 
     private service: LivroService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private router: Router
 
   ) { }
 
@@ -49,6 +50,10 @@ export class LivroReadAllComponent implements OnInit {
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
+
+  navegarParaCadastrarNovoLivro(): void{
+    this.router.navigate([`categorias/${this.id_cat}/livros/create`]);
   }
 
 }
