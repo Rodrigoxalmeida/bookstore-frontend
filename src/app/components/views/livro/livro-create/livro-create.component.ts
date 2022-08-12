@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Livro } from '../model/livro.model';
+import { LivroService } from '../service/livro.service';
 
 @Component({
   selector: 'app-livro-create',
@@ -15,16 +17,35 @@ export class LivroCreateComponent implements OnInit {
 
   id_cat: String = '';
 
+  livro: Livro = {
+    id: '',
+    titulo: '',
+    nome_autor: '',
+    texto: ''
+  }
+
   constructor(
 
     private route: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private service: LivroService
 
   ) { }
 
   ngOnInit(): void {
     this.id_cat = this.route.snapshot.paramMap.get('id_cat')!;
   }
+
+  create(): void {
+    this.service.create(this.livro,this.id_cat).subscribe((resposta) =>{
+      this.router.navigate([`categorias/${this.id_cat}/livros`]);
+      this.service.mensagemSucesso('Livro Cadastrado com sucesso!');
+    }, err => {
+      this.router.navigate([`categorias/${this.id_cat}/livros`]);
+      this.service.mensagemErro('Erro ao cadastrar!');
+    })
+  }
+
 
   getMessage(){
     if(this.titulo.invalid){
