@@ -1,0 +1,29 @@
+form{
+    width: 90%;
+    margin: auto;
+    
+}
+
+.home {
+    margin: 1rem auto;
+    text-align: center;
+    background-color: rgb(107, 107, 107);
+}
+
+.title{
+    color: white;
+    font-size: 20px;
+}
+
+.subtitle{
+    color: white;
+    font-size: 20px;
+}
+
+.voltar {
+    margin-left: 5.4rem;
+    margin-top: 1rem;
+    color: rgb(56, 219, 105);
+}
+
+

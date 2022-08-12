@@ -24,11 +24,16 @@ h1{
 
 .form textarea{
     max-height: 0.8rem;
+    color: rgb(241, 89, 89);
     resize: none;
 }
 
 .form textarea::placeholder{
     color: white;
+}
+
+.form input{
+    color: rgb(241, 89, 89);
 }
 
 .buttons {

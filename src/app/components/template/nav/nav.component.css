@@ -8,6 +8,7 @@
 }
 
 .sidenav {
+    padding-top: 1.5rem;
     width: 12rem;
     background-color: rgb(58, 57, 57);
 }
