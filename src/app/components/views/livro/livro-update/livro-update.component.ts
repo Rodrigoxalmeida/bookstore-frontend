@@ -14,7 +14,7 @@ export class LivroUpdateComponent implements OnInit {
   titulo = new FormControl('', [Validators.minLength(3)]);
   autor = new FormControl('', [Validators.minLength(3)]);
   descricao = new FormControl('', [Validators.minLength(10)]);
-
+  
   id_cat: String = '';
 
   livro: Livro = {

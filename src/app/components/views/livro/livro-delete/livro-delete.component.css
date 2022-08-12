@@ -25,10 +25,19 @@ h1{
 .form textarea{
     max-height: 0.8rem;
     resize: none;
+    
 }
 
 .form textarea::placeholder{
     color: white;
+}
+
+input {
+    color: white;
+}
+
+input::placeholder{
+    color:white;
 }
 
 .buttons {
@@ -43,7 +52,7 @@ button {
     padding-left: 2rem;
 }
 
-.excluir {
+.criar {
     color: white;
     background-color: rgb(61, 187, 61);
 }
