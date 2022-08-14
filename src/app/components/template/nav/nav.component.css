@@ -19,6 +19,18 @@ img {
     margin: 2rem auto 1rem auto;
 }
 
+.img-nav{
+    padding-left: 1rem;
+    width: 90%;
+}
+
+.titulo-nav{
+    align-items: center;
+    padding-left: 4.2rem;
+    padding-bottom: 2rem;
+    color:white;
+}
+
 .sidenav a {
     color: white;
 }
