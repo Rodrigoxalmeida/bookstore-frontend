@@ -6,10 +6,23 @@
     height: 5%;
 }
 
+.copywriter{
+    padding-right: 15rem;
+    align-items: center;
+    color: white;
+}
+
+.version{
+    padding-right: 2rem;
+    color: white;
+}
+.dev{
+    opacity: .4;
+}
+
 h3 {
     font-size: 1rem;
     color: white;
-    opacity: .4;
 }
 
 a{
