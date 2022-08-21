@@ -1,5 +1,6 @@
-import { NgModule } from '@angular/core';
+import { DEFAULT_CURRENCY_CODE, LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule, registerLocaleData } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -33,6 +34,8 @@ import { LivroUpdateComponent } from './components/views/livro/livro-update/livr
 import { LivroDeleteComponent } from './components/views/livro/livro-delete/livro-delete.component';
 import { LivroReadComponent } from './components/views/livro/livro-read/livro-read.component';
 
+import ptBR from '@angular/common/locales/pt';
+registerLocaleData(ptBR);
 
 @NgModule({
   declarations: [
@@ -68,10 +71,15 @@ import { LivroReadComponent } from './components/views/livro/livro-read/livro-re
     MatInputModule,
     MatSnackBarModule,
     MatPaginatorModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CommonModule,
+    
 
   ],
-  providers: [],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'pt'},
+    { provide: DEFAULT_CURRENCY_CODE, useValue: 'BRL'}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
