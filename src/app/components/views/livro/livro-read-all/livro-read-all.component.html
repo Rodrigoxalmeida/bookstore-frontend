@@ -23,9 +23,15 @@
           <td mat-cell *matCellDef="let row"> {{ row.titulo }} </td>
         </ng-container>
 
+        <ng-container matColumnDef="nome_autor">
+          <th mat-header-cell *matHeaderCellDef> Autor </th>
+          <td mat-cell *matCellDef="let row"> {{ row.nome_autor }} </td>
+        </ng-container>
+
         <ng-container matColumnDef="preco_capa">
           <th mat-header-cell *matHeaderCellDef> Preço de Capa </th>
-          <td mat-cell *matCellDef="let row"> {{ row.preco_capa | currency }} </td>
+          <td class="preco_capa" mat-cell *matCellDef="let row"> {{ row.preco_capa | currency }} </td>
+        
         </ng-container>
     
         <ng-container matColumnDef="livros">

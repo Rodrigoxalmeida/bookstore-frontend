@@ -16,7 +16,7 @@ export class LivroReadAllComponent implements OnInit {
 
   ELEMENT_DATA: Livro[] = []
 
-  displayedColumns: string[] = ['id', 'titulo','preco_capa', 'livros', 'acoes'];
+  displayedColumns: string[] = ['id', 'titulo','nome_autor', 'preco_capa', 'livros', 'acoes'];
   dataSource = new MatTableDataSource<Livro>(this.ELEMENT_DATA);
 
   id_cat: String = '';
