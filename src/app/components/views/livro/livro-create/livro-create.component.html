@@ -14,6 +14,12 @@
     </mat-form-field>
 
     <mat-form-field class="form"> 
+        <mat-label class="labelNome">Preço de Capa</mat-label>
+        <input matInput [(ngModel)]="livro.preco_capa" [formControl]="preco_capa" required type="text" name="autor" placeholder="Ex. Douglas Rocha Mendes" maxlength="100">
+        <mat-error *ngIf="preco_capa.invalid">{{getMessage()}}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="form"> 
         <mat-label class="labelDescricao">Descrição</mat-label>
         <textarea matInput [(ngModel)]="livro.texto" [formControl]="descricao" required  type="text" name="descricao" placeholder="Ex. Programação java com ênfase em orientação a objetos" maxlength="2000000"></textarea>
         <mat-error *ngIf="descricao.invalid">{{getMessage()}}</mat-error>

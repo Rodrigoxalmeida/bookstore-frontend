@@ -16,6 +16,7 @@ export class LivroReadComponent implements OnInit {
     id: '',
     titulo: '',
     nome_autor: '',
+    preco_capa: 0,
     texto: ''
   }
 

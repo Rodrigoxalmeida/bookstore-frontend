@@ -13,6 +13,7 @@ export class LivroCreateComponent implements OnInit {
   
   titulo = new FormControl('', [Validators.minLength(3)]);
   autor = new FormControl('', [Validators.minLength(3)]);
+  preco_capa = new FormControl('');
   descricao = new FormControl('', [Validators.minLength(10)]);
 
   id_cat: String = '';
@@ -21,6 +22,7 @@ export class LivroCreateComponent implements OnInit {
     id: '',
     titulo: '',
     nome_autor: '',
+    preco_capa: 0.00,
     texto: ''
   }
 
@@ -53,6 +55,9 @@ export class LivroCreateComponent implements OnInit {
     }
     if(this.autor.invalid){
       return 'O Campo Autor deve conter entre 3 e 100 caracteres';
+    }
+    if(this.preco_capa.invalid){
+      return 'O Campo preco_capa não pode ser nulo';
     }
     if(this.descricao.invalid){
       return 'O Campo Descrição deve conter entre 10 e 2.000.000 caracteres';

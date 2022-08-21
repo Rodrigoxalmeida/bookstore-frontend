@@ -69,6 +69,7 @@ import { LivroReadComponent } from './components/views/livro/livro-read/livro-re
     MatSnackBarModule,
     MatPaginatorModule,
     ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

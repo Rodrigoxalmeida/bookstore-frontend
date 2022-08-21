@@ -12,6 +12,11 @@
     </mat-form-field>
 
     <mat-form-field class="form"> 
+        <mat-label class="labelNome">Preco de capa</mat-label>
+        <input matInput [(ngModel)]="livro.preco_capa" type="text" name="autor" disabled>
+    </mat-form-field>
+
+    <mat-form-field class="form"> 
         <mat-label class="labelDescricao">Descrição</mat-label>
         <textarea matInput [(ngModel)]="livro.texto" type="text" name="descricao" disabled></textarea>
     </mat-form-field>

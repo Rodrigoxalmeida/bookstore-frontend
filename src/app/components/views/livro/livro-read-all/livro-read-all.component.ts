@@ -1,9 +1,11 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild} from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { ActivatedRoute, Router } from '@angular/router';
 import { LivroService } from '../service/livro.service';
 import { Livro } from '../model/livro.model';
+
+
 
 @Component({
   selector: 'app-livro-read-all',
@@ -14,7 +16,7 @@ export class LivroReadAllComponent implements OnInit {
 
   ELEMENT_DATA: Livro[] = []
 
-  displayedColumns: string[] = ['id', 'titulo', 'livros', 'acoes'];
+  displayedColumns: string[] = ['id', 'titulo','preco_capa', 'livros', 'acoes'];
   dataSource = new MatTableDataSource<Livro>(this.ELEMENT_DATA);
 
   id_cat: String = '';
