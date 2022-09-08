@@ -15,6 +15,10 @@ form{
     font-size: 20px;
 }
 
+.preco_capa{
+    color:greenyellow;
+}
+
 .subtitle{
     color: white;
     font-size: 20px;
